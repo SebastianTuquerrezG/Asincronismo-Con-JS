@@ -1,0 +1,17 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "Aprender Asincronismo en Javaa",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promesas",
+    "async",
+    "await"
+  ],
+  "author": "Sebastian Tuquerrez",
+  "license": "ISC"
+}
