@@ -1,7 +1,7 @@
 // importamos el modulo para hacer las peticiones
 let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 // direccion de la API
-let api = 'https://rickandmortyapi.com/api/character/';
+let API = 'https://rickandmortyapi.com/api/character/';
 
 // funcion principal
 function fetchData(url_api, callback){
@@ -31,11 +31,11 @@ function fetchData(url_api, callback){
 }
 
 // primero buscamos la lista de personajes
-fetchData(api, (error1, data1) => {
+fetchData(API, (error1, data1) => {
   // si error, matamos retornando un error
   if(error1) return console.error(error1);
   // luego buscamos en la api el id de Rick
-  fetchData(api + data1.results[0].id, (error2, data2) => {
+  fetchData(API + data1.results[1].id, (error2, data2) => {
     // si error, matamos retornando un error
     if(error2) return console.error(error2);
     // por ultimo la consulta a la api que contiene su dimension
@@ -49,8 +49,8 @@ fetchData(api, (error1, data1) => {
       console.log(data3.dimension);
       
       // rutas de las peticiones en orden
-      console.log(api);
-      console.log(api + data1.results[0].id); 
+      console.log(API);
+      console.log(API + data1.results[0].id); 
       console.log(data2.origin.url); 
     
     });
