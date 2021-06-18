@@ -1,7 +1,7 @@
 //Convertido de EcmaScript general a EcmaScript 6
 let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 
-const fetchData = (url_api, callback) => {0
+const fetchData = (url_api) => {0
     return new Promise((resolve, reject) => {
         const xhttp = new XMLHttpRequest();
         xhttp.open('GET', url_api, true);

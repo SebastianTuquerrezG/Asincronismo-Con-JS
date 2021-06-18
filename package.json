@@ -6,7 +6,8 @@
   "scripts": {
     "callback": "node src/callback/index.js",
     "callback:reto": "node src/callback/reto.js",
-    "promise": "node src/promise/index.js"
+    "promise": "node src/promise/index.js",
+    "promise:reto": "node src/promise/reto.js"
   },
   "keywords": [
     "callbacks",
